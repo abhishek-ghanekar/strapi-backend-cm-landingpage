@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_case_studies_challenges",
+  "info": {
+    "displayName": "Challenges"
+  },
+  "options": {},
+  "attributes": {
+    "ChallengesDescription": {
+      "type": "text"
+    }
+  }
+}

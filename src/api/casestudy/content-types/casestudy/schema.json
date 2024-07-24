@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "casestudies",
+  "info": {
+    "singularName": "casestudy",
+    "pluralName": "casestudies",
+    "displayName": "casestudies",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Location": {
+      "type": "string",
+      "required": true
+    },
+    "CoverImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "BannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "FundingSecured": {
+      "type": "string",
+      "required": true
+    },
+    "About": {
+      "type": "text",
+      "required": true
+    },
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Testimonial": {
+      "type": "component",
+      "repeatable": true,
+      "component": "case-studies.testimonials",
+      "required": false
+    },
+    "Benefits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "case-studies.benefits",
+      "required": true
+    },
+    "Challenges": {
+      "type": "component",
+      "repeatable": true,
+      "component": "case-studies.challenges"
+    },
+    "HowItHelped": {
+      "type": "text",
+      "required": true
+    },
+    "Solutions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "case-studies.solutions"
+    },
+    "Industry": {
+      "type": "string",
+      "required": true
+    },
+    "TeamSize": {
+      "type": "string"
+    }
+  }
+}

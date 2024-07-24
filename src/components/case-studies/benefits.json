@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_case_studies_benefits",
+  "info": {
+    "displayName": "Benefits"
+  },
+  "options": {},
+  "attributes": {
+    "BenefitsDescription": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

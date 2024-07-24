@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_case_studies_solutions",
+  "info": {
+    "displayName": "Solutions"
+  },
+  "options": {},
+  "attributes": {
+    "Solution": {
+      "type": "text"
+    }
+  }
+}

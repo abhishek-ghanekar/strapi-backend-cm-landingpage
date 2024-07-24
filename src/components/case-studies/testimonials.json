@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_case_studies_testimonials",
+  "info": {
+    "displayName": "Testimonials"
+  },
+  "options": {},
+  "attributes": {
+    "TestimonialDescription": {
+      "type": "text",
+      "required": true
+    },
+    "ClientName": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
