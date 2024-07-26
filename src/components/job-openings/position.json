@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_job_openings_positions",
+  "info": {
+    "displayName": "Position",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "JobPosition": {
+      "type": "string",
+      "required": true
+    },
+    "Location": {
+      "type": "string",
+      "required": true
+    },
+    "Experience": {
+      "type": "string",
+      "required": true
+    },
+    "ApplyLink": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

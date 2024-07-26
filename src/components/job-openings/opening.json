@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_job_openings_openings",
+  "info": {
+    "displayName": "Opening",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "RoleCategory": {
+      "type": "string",
+      "required": true
+    },
+    "MultiplePositions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "job-openings.position"
+    }
+  }
+}

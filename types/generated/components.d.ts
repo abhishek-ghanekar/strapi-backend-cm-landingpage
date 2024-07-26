@@ -1,5 +1,31 @@
 import type { Schema, Attribute } from '@strapi/strapi';
 
+export interface JobOpeningsPosition extends Schema.Component {
+  collectionName: 'components_job_openings_positions';
+  info: {
+    displayName: 'Position';
+    description: '';
+  };
+  attributes: {
+    JobPosition: Attribute.String & Attribute.Required;
+    Location: Attribute.String & Attribute.Required;
+    Experience: Attribute.String & Attribute.Required;
+    ApplyLink: Attribute.String & Attribute.Required;
+  };
+}
+
+export interface JobOpeningsOpening extends Schema.Component {
+  collectionName: 'components_job_openings_openings';
+  info: {
+    displayName: 'Opening';
+    description: '';
+  };
+  attributes: {
+    RoleCategory: Attribute.String & Attribute.Required;
+    MultiplePositions: Attribute.Component<'job-openings.position', true>;
+  };
+}
+
 export interface CaseStudiesTestimonials extends Schema.Component {
   collectionName: 'components_case_studies_testimonials';
   info: {
@@ -44,6 +70,8 @@ export interface CaseStudiesBenefits extends Schema.Component {
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
+      'job-openings.position': JobOpeningsPosition;
+      'job-openings.opening': JobOpeningsOpening;
       'case-studies.testimonials': CaseStudiesTestimonials;
       'case-studies.solutions': CaseStudiesSolutions;
       'case-studies.challenges': CaseStudiesChallenges;
